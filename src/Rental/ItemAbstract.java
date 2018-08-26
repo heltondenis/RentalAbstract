@@ -9,6 +9,15 @@ package Rental;
  *
  * @author heltondenis
  */
-public class ItemAbstract {
+public abstract class ItemAbstract {
     
+    private int code;
+    private String title;
+    private String dataBorrowed;
+    private String dataDevolution;
+    private String SituationDate; // L free ; E Borrowed
+    
+    public abstract void register();
+    public abstract void lend();
+    public abstract void return_item();
 }
