@@ -93,5 +93,9 @@ public class Dvd extends ItemAbstrato {
     public static Dvd getInstance(){
         return new Dvd();
     }
+
+    void vender() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
 
