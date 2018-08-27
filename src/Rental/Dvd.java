@@ -12,9 +12,13 @@ import java.util.Date;
  *
  * @author heltondenis
  */
-public class Dvd extends ItemAbstrato {
+public class Dvd extends ItemAbstrato { 
     
     SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
+    
+    public Dvd(){
+        
+    }
 
     @Override
     public void cadastrar() {
@@ -55,26 +59,39 @@ public class Dvd extends ItemAbstrato {
     }
 
     private String getCodigo() {
-       
+        return null;
     }
 
     private String getTitulo() {
+        return null;
 
     }
 
     private String getSituacaoItem() {
+        return null;
 
     }
 
     private String getDataEmprestimo() {
+        return null;
 
     }
 
     private String getDataDevolucao() {
+        return null;
      
     }
 
     private void setDataEmprestimo(String format) {
        
-    } 
+    }
+    
+    public void imprimir(){
+        System.out.println("Imprimir Lista de DVD's utilizando método concreto da classe DVD");
+    }
+    
+    public static Dvd getInstance(){
+        return new Dvd();
+    }
 }
+
